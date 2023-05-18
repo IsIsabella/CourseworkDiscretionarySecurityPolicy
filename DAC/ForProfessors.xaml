@@ -1,0 +1,46 @@
+﻿<Window x:Class="DAC.ForProfessors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DAC"
+        WindowStartupLocation="CenterScreen"
+         Icon="icon.ico"
+        mc:Ignorable="d"
+        Title="Библиотека" Height="521.732" Width="800" MinWidth="900" MinHeight="571" Background="BlanchedAlmond">
+    <Grid>
+        <Button Width="52" Click="HomeClick" Margin="827,26,14.6,462.6" HorizontalAlignment="Center" FontSize="20" FontFamily="Rockwell Extra Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="home.png"/>
+            </Button.Background>
+        </Button>
+        <StackPanel Margin="100,80,99.6,80">
+            <Button  Height="100" Width="255" Click="WorkWithBookClick" Margin="226,10,212.6,10" HorizontalAlignment="Center" Content="Работа с книгой" FontSize="20" FontFamily="Rockwell Extra Bold" Background="Orange">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button  Height="100" Width="255" Click="ExtensionRightsClick" Margin="226,10,212.6,10" HorizontalAlignment="Center" Content="Расширение прав" FontSize="20" FontFamily="Rockwell Extra Bold" Background="Orange">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button  Height="100" Width="255" Click="AddBookClick" Margin="226,10,212.6,10" HorizontalAlignment="Center" Content="Добавление книги" FontSize="20" FontFamily="Rockwell Extra Bold" Background="Orange">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

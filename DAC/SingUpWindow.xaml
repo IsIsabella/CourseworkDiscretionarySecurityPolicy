@@ -1,0 +1,35 @@
+﻿<Window x:Class="DAC.SingUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DAC"
+        WindowStartupLocation="CenterScreen"
+         Icon="icon.ico"
+        mc:Ignorable="d"
+        Title="Библиотека" Height="521.732" Width="800" MinWidth="900" MinHeight="571" Background="BlanchedAlmond">
+    <Grid>
+        <StackPanel Margin="100,60,100,90">
+            <Label FontSize="30" FontFamily="Rockwell Extra Bold">Регистрация</Label>
+            <Label FontSize="20" FontFamily="Rockwell Extra Bold">Имя пользователя</Label>
+            <TextBox x:Name="UserNameTextBox" FontSize="20"  Width="400" HorizontalAlignment="Left" Height="40"/>
+            <Label FontSize="20" FontFamily="Rockwell Extra Bold">Тип пользователя</Label>
+            <ComboBox x:Name="UserTypeComboBox" FontSize="20"  Width="400" HorizontalAlignment="Left" Height="39">
+                <TextBlock>Администратор</TextBlock>
+                <TextBlock>Преподаватель</TextBlock>
+                <TextBlock>Студент</TextBlock>
+            </ComboBox>
+            <Label FontSize="20" FontFamily="Rockwell Extra Bold">Пароль</Label>
+            <PasswordBox x:Name="UserPasswordTextBox" FontSize="20" Width="400" HorizontalAlignment="Left" MaxLength="6" PasswordChar="X" Height="41" />
+        </StackPanel>
+        <StackPanel Margin="100,392,99.6,9.6">
+            <Button   Height="72" Width="180" Click="SingUpClick" Margin="262,10,251.6,10" HorizontalAlignment="Center" Content="Регистрация" FontSize="20" FontFamily="Rockwell Extra Bold" Background="Orange">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAC", "DAC\DAC.csproj", "{AEE2A556-8983-4C4A-8D9B-7D3DC6B7557A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEE2A556-8983-4C4A-8D9B-7D3DC6B7557A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE2A556-8983-4C4A-8D9B-7D3DC6B7557A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE2A556-8983-4C4A-8D9B-7D3DC6B7557A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE2A556-8983-4C4A-8D9B-7D3DC6B7557A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {769BFEA8-476A-407A-8763-A7F788351008}
+	EndGlobalSection
+EndGlobal

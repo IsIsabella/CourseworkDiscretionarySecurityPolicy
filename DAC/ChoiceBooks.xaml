@@ -1,0 +1,43 @@
+﻿<Window x:Class="DAC.ChoiceBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DAC"
+        WindowStartupLocation="CenterScreen"
+         Icon="icon.ico"
+        mc:Ignorable="d"
+        Title="Библиотека" Height="521.732" Width="800" MinWidth="900" MinHeight="571" Background="BlanchedAlmond">
+    <Grid>
+        <Button Width="52" Click="HomeClick" Margin="827,26,14.6,462.6" HorizontalAlignment="Center" FontSize="20" FontFamily="Rockwell Extra Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="home.png"/>
+            </Button.Background>
+        </Button>
+        <StackPanel Margin="100,60,99.6,248.6">
+            <Label FontSize="20" FontFamily="Rockwell Extra Bold">Список книг</Label>
+            <ComboBox x:Name="BooksListComboBox" FontSize="20"  Width="574" HorizontalAlignment="Left" Margin="10,0,0,0" Height="39">
+            </ComboBox>
+            <Label FontSize="20" FontFamily="Rockwell Extra Bold">Тип доступа</Label>
+            <ComboBox x:Name="TypeOfAccessComboBox" FontSize="20"  Width="390" HorizontalAlignment="Left" Margin="10,0,0,0" Height="39">
+                <TextBlock>Чтение файла</TextBlock>
+                <TextBlock>Запись в файл</TextBlock>
+                <TextBlock>Удаление файла</TextBlock>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Margin="100,298,99.6,79.6">
+            <Button  Height="70" Width="182" Click="RequestClick" Margin="250,10,261.6,10" HorizontalAlignment="Center" Content="Запросить" FontSize="20" FontFamily="Rockwell Extra Bold" Background="Orange">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

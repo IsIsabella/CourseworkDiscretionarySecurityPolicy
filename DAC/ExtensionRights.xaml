@@ -1,0 +1,43 @@
+﻿<Window x:Class="DAC.ExtensionRights"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DAC"
+        WindowStartupLocation="CenterScreen"
+         Icon="icon.ico"
+        mc:Ignorable="d"
+        Title="Библиотека" Height="521.732" Width="800" MinWidth="900" MinHeight="571" Background="BlanchedAlmond">
+    <Grid>
+        <StackPanel Margin="100,60,99.6,117.6">
+            <Label FontSize="30" FontFamily="Rockwell Extra Bold">Расширение прав</Label>
+            <ListBox Name="UsersListBox" Margin="10,10,9.6,10" Height="190">
+                <ListBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="Background" Value="Gold"/>
+                        <Setter Property="Margin" Value="5"/>
+                        <Setter Property="Padding" Value="5"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                                <Setter Property="BorderBrush" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+            <Label FontSize="20" Height="36" FontFamily="Rockwell Extra Bold" Margin="10,2,10,10">Список книг</Label>
+            <ComboBox x:Name="BooksListComboBox" Margin="10,10,10,10" FontSize="20"  Width="600" HorizontalAlignment="Left" Height="42"/>
+        </StackPanel>
+        <StackPanel Margin="100,429,99.6,9.6">
+            <Button   Height="70" Width="181" Click="ExtensionClick" Margin="252,10,260.6,10" HorizontalAlignment="Center" Content="Далее" FontSize="20" FontFamily="Rockwell Extra Bold" Background="Orange">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
